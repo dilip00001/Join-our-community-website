@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+
+}
+
+body{
+    font-family:'Karla', sans-serif;
+    line-height:1.3;
+    background-color:var(--LightGray);
+    color:var(--GrayishBlue);
+    padding: 1.8rem;
+    
+}
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Cyan: hsl(179, 62%, 40%);
+    --BrightYellow: hsl(71, 73%, 50%);
+    --ltyellow:hsl(71, 73%, 45%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --grayblue:hsl(218, 22%, 80%);
+    --paddingX:1.8rem;
+    --paddingY:1.5rem;
+}
+
+a{
+    text-decoration:none;
+}  
+
+h1,h2,h3{
+    margin-top: 0;
+    font-weight: bold;
+    
+    
+}
+.price{
+    border-radius:0.5rem;
+    overflow: hidden;
+    max-width: 40rem;
+    margin: auto;
+    
+
+
+}
+
+@media only screen and(min-width:62.5em){
+    
+
+    .price{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+
+    }
+
+    .community{
+        grid-column: 1/3;
+    }
+}
+
+
+
+.price > *{
+    padding: var(--paddingX) var(--paddingY);
+}
+
+.community{
+    background-color:var(--white);
+}
+
+.community h2{
+    font-size: 1.23rem;
+    color: var(--Cyan);
+    font-weight: bold;
+
+}
+
+.subtitle{
+    font-size:1rem;
+    color: var(--BrightYellow);
+    font-weight: bold;
+}
+
+.community p{
+    font-size:0.85rem;
+    line-height: 1.75;
+}
+.subscription{
+    background:var(--Cyan);
+    padding-bottom: 2.5rem;
+
+}
+
+.subscription h3{
+    color:var(--white);
+}
+
+.subscription-price{
+    color:var(--white);
+    font-weight: bold;
+    font-size:1.5rem;
+}
+.lighter{
+    font-size:15px;
+    color:var(--grayblue);
+    font-weight: lighter;
+
+    
+}
+
+.subscription p{
+    color:var(--LightGray);
+    margin-bottom:2.5rem;
+}
+.subscription a{
+    background-color: var(--BrightYellow);
+    color: var(--white);
+    /*color: black;*/
+    padding: 0.75rem;
+    display:block;
+    text-align: center;
+    border-radius:0.25rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+    
+    
+}
+
+.why-us{
+    background:hsl(180, 34%, 17%); 
+}
+.why-us h3{
+    color:var(--white);
+    
+}
+
+ul{
+    list-style-type: none;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.subscription a:hover{
+    background-color:var(--ltyellow);
+}
